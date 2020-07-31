@@ -1,0 +1,14 @@
+[package]
+name = "native"
+version = "0.1.0"
+authors = ["Alexandre Frigon <alexandre.frigon.1@gmail.com>"]
+edition = "2018"
+
+[lib]
+name="elios"
+crate-type = ["dylib"]
+
+[dependencies]
+rust-pigpio = "0.2.0"
+acproto = { git = "https://github.com/afrigon/acproto", branch = "main" }
+
