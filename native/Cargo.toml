@@ -6,9 +6,9 @@ edition = "2018"
 
 [lib]
 name="elios"
-crate-type = ["dylib"]
+crate-type = ["cdylib"]
 
 [dependencies]
-rust-pigpio = "0.2.0"
 acproto = { git = "https://github.com/afrigon/acproto", branch = "main" }
-
+rust_gpiozero = "0.2.0"
+nodejs-sys = "0.2.0"
